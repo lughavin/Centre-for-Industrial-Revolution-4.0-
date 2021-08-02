@@ -1,0 +1,107 @@
+.heroBanner {
+  background-image: url("/imgs/lightbulb.jpg");
+  height: 240px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.backButton {
+  padding-top: 45px;
+  padding-left: 130px;
+  padding-bottom: 40px;
+  a {
+    text-decoration: none;
+    color: #ba181b;
+    font-size: 12px;
+    .arrowLeft {
+      border: solid #ba181b;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.programTitle {
+  padding-left: 130px;
+  padding-bottom: 45px;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    color: #a4161a;
+    font-size: 32px;
+  }
+}
+
+.programRow {
+  display: flex;
+  margin-bottom: 60px;
+  .firstColumn {
+    flex: 50%;
+    padding-left: 30px;
+    .programImg {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      img {
+        width: 450px;
+      }
+    }
+    .programButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 30px;
+      button {
+        width: 450px;
+        height: 55px;
+        margin-bottom: 30px;
+        border: none;
+        color: white;
+        font-weight: 700;
+        border-radius: 3px;
+        background-color: #ba181b;
+        &:hover {
+          background-color: #e5383b;
+        }
+      }
+    }
+  }
+  .secondColumn {
+    flex: 50%;
+    padding-right: 100px;
+    h3 {
+      color: #e5383b;
+      font-size: 26px;
+      font-weight: 700;
+      padding-bottom: 10px;
+    }
+    p {
+      font-weight: 16px;
+      line-height: 2.5;
+      text-align: justify;
+    }
+    h4 {
+      color: #e5383b;
+      font-size: 22px;
+      font-weight: 600;
+      padding-bottom: 10px;
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 18px;
+      padding-left: 25px;
+      padding-bottom: 5px;
+    }
+  }
+}

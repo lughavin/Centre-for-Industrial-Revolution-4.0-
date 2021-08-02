@@ -1,0 +1,76 @@
+.articlesTitle {
+  padding: 55px;
+  padding-bottom: 10px;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+.articleBlock {
+  .row {
+    margin-bottom: 0px;
+    .columnStyle {
+      .card {
+        background-color: #dedede;
+        align-items: center;
+        margin-bottom: 55px;
+        .img-fluid {
+          width: 95%;
+          padding-top: 8px;
+        }
+        .card-body {
+          padding: 0px;
+          .card-title {
+            text-align: center;
+            font-weight: 700;
+          }
+          .card-text {
+            text-align: center;
+            font-size: 14px;
+            padding: 0px 25px 0px 25px;
+          }
+          hr {
+            background-color: black;
+            width: 100%;
+          }
+          .authorDate {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 15px;
+            .authorText {
+              text-decoration: none;
+              color: black;
+              font-weight: 600;
+              font-size: 16px;
+              span {
+                color: #e5383b;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pageIndicator {
+  padding-top: 0px;
+  padding-bottom: 70px;
+  margin-top: -60px;
+  display: flex;
+  justify-content: center;
+  a {
+    padding: 0px 15px;
+    margin: 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #7b7b7b;
+    &:hover {
+      color: #e5383b;
+    }
+    &:active {
+      color: #e5383b;
+      text-decoration: underline;
+    }
+  }
+}

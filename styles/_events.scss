@@ -1,0 +1,254 @@
+.eventsHeader {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 70px;
+}
+
+.events-navbar {
+  .navbarContainer {
+    display: flex;
+    justify-content: end;
+    margin: 8px 0px;
+    li {
+      list-style: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+        &:hover {
+          color: red;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.eventsTitle {
+  padding: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 30px;
+  }
+  h4 {
+    font-weight: 500;
+  }
+}
+
+.eventBlock {
+  .row {
+    margin-bottom: 0;
+    .columnStyle {
+      .event-card {
+        padding: 0px 2px 15px 0px;
+        align-items: center;
+        margin-bottom: 55px;
+        width: 100%;
+        height: 650px;
+        max-height: 650px;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        .event-card-body {
+          padding: 0px 30px;
+          .event-card-title {
+            text-align: center;
+            font-weight: 800;
+            font-size: 18px;
+          }
+          .event-card-text {
+            text-align: center;
+            font-size: 14px;
+            line-height: 2;
+          }
+          .time-info {
+            font-size: 18px;
+            color: #e5383b;
+            font-weight: 800;
+            text-align: center;
+          }
+        }
+        .dateBlock {
+          position: absolute;
+          top: 0;
+          right: 17px;
+          background-color: #e5383b;
+          color: white;
+          padding-left: 20px;
+          padding-right: 20px;
+          text-align: center;
+          h2 {
+            font-weight: 700;
+          }
+        }
+        &:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
+
+.eventPageIndicator {
+  padding-top: 0px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  a {
+    padding: 0px 15px;
+    margin: 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #7b7b7b;
+    &:hover {
+      color: #e5383b;
+    }
+    &:active {
+      color: #e5383b;
+      text-decoration: underline;
+    }
+  }
+}
+
+.eventFooter {
+  background-color: #2d2d2d;
+  color: white;
+  bottom: 0;
+  height: 290px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.calendar {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 50px auto;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding-bottom: 20px;
+  .calendar__body{
+    width: inherit;
+  }
+}
+
+
+
+.calendar_title{
+  text-align: center;
+  background-color: red;
+  padding: 2px 0px;
+  color: white;
+  width: 100%;
+  border-radius: 7px 7px 0 0;
+}
+
+.calendar__month {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 10px;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+}
+
+
+.cal-month__previous,
+.cal-month__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 10%;
+  height: 30px;
+  text-align: center;
+  
+  &:hover {
+    font-weight: 400;
+    color: black;
+  }
+}
+
+.cal-month__next {
+  right: 0;
+}
+
+.cal-month__current {
+  text-align: center;
+  color: black;
+  font-size: 36px;
+  width: 100%;
+  font-size: 30px;
+}
+
+.cal-head__day,
+.cal-body__day {
+  display: block;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.cal-body__week,
+.calendar__head {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.calendar__head {
+  line-height: 50px;
+  position: relative;
+  width: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  
+  &:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #90CAF9;
+  }
+}
+
+.cal-body__day {
+  color: rgb(158, 158, 158);
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cal-day__month--current {
+  color: #2e2e2e;
+}
+
+.cal-day__day--today {
+  font-weight: 800;
+  color: red;
+}
+
+.cal-day__day--selected {
+  background-color: red;
+  color: white;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .75);
+}

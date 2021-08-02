@@ -1,0 +1,408 @@
+.index-header {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 70px;
+}
+
+.index-navbar {
+  .navbarContainer {
+    display: flex;
+    justify-content: end;
+    margin: 8px 0px;
+    li {
+      list-style: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+        &:hover {
+          color: red;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.carousel {
+  .carousel-inner {
+    height: 500px;
+    .item {
+      .text-block {
+        position: absolute;
+        top: 30%;
+        left: 120px;
+        padding: 0 270px 0 70px;
+        color: white;
+        text-align: left;
+        h3 {
+          font-size: 38px;
+          font-weight: 700;
+          padding-bottom: 10px;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 400;
+          padding-right: 290px;
+          padding-bottom: 18px;
+        }
+        a {
+          color: white;
+          background-color: #e5383b;
+          width: 350px;
+          text-align: center;
+          text-decoration: none;
+          font-weight: 700;
+          padding: 8px 70px;
+          border: none;
+          border-radius: 3px;
+          box-shadow: 2px 2px 6px #2b2b2b;
+          &:hover {
+            border-radius: 3px;
+            background-color: #df6a6c;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.eventBlock {
+  .row {
+    .columnStyle {
+      .index-event-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border: solid #5252526b 1px;
+        border-radius: 8px;
+        &:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        a {
+          text-decoration: none;
+          width: inherit;
+          text-align: center;
+          color: black;
+        }
+        .img-fluid {
+          width: 90%;
+          margin-top: 15px;
+          margin-bottom: 0;
+        }
+        .card-body {
+          padding-top: 0;
+          text-align: center;
+          .card-title {
+            font-weight: 800;
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+          .card-text {
+            font-weight: 400;
+            line-height: 2;
+            padding: 0px 15px;
+          }
+          hr {
+            margin: 0 0 15px 0;
+          }
+          .time-date {
+            p {
+              font-weight: 700;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .eventBtn {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    a {
+      width: 250px;
+    }
+  }
+}
+//what we offer styling
+.offer-row {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  .columnStyle {
+    .offer-card {
+      width: 400px;
+      text-align: center;
+      border: solid #5252526b 1px;
+      border-radius: 8px;
+      &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.425);
+      }
+      a {
+        text-decoration: none;
+        width: inherit;
+        height: 500px;
+        text-align: center;
+        color: black;
+      }
+      .img-fluid {
+        width: 90%;
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+      .card-body {
+        padding: 0px 40px 15px 40px;
+        .card-title {
+          margin-top: 0;
+          font-weight: 700;
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        .card-text {
+          margin-bottom: 10px;
+          font-weight: 400;
+          line-height: 2.5;
+        }
+      }
+    }
+  }
+}
+
+.offerBtn {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  a {
+    width: 250px;
+  }
+}
+
+//what we do section styling
+
+.what-we-do-section {
+  background-color: #ba181b;
+  margin-top: 70px;
+  padding-bottom: 20px;
+  .pageTitle {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    color: white;
+  }
+  .sectionContainer {
+    display: flex;
+    .what-we-do-card {
+      text-align: center;
+      color: white;
+      width: 100%;
+      img {
+        width: 60%;
+      }
+      h5 {
+        padding-top: 10px;
+        font-weight: 600;
+      }
+      p {
+        padding: 8px 50px 5px 50px;
+        line-height: 2;
+        font-weight: 400;
+      }
+      ul {
+        margin-top: 10px;
+        li {
+          padding: 8px 50px 5px 50px;
+          line-height: 2;
+          font-weight: 400;
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+//News and Articles Styling
+.news-articles-section {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 250px;
+  .divider {
+    border-left: 2px solid #a7a7a7;
+    height: 750px;
+    margin-top: 10px;
+  }
+  .news-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin-right: 45px;
+    .col-title {
+      text-align: left;
+      width: 100%;
+      padding-left: 170px;
+      h4 {
+        font-weight: 800;
+        color: #e5383b;
+        padding-bottom: 20px;
+      }
+    }
+    .index-news-card {
+      position: relative;
+      width: 70%;
+      color: white;
+      margin-bottom: 25px;
+      a {
+        text-decoration: none;
+        width: 100%;
+        text-align: left;
+        color: white;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      img {
+        width: 100%;
+      }
+      .news-subheading {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        p {
+          padding-left: 15px;
+          font-weight: 600;
+          line-height: 2;
+          font-size: 16px;
+        }
+      }
+    }
+    .read-more-btn {
+      width: 100%;
+      padding-left: 170px;
+      padding-top: 15px;
+      .news-btn {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: #e5383b;
+        border-radius: 6px;
+        padding: 8px 35px;
+        &:hover {
+          background-color: #ba181b;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.425);
+        }
+      }
+    }
+  }
+  //Articles
+  .articles-col {
+    width: 100%;
+    margin-left: 45px;
+    .col-title {
+      h4 {
+        font-weight: 800;
+        color: #e5383b;
+        padding-bottom: 20px;
+      }
+    }
+    .index-articles-card {
+      display: flex;
+      padding-bottom: 15px;
+      a {
+        text-decoration: none;
+        width: 100%;
+        text-align: left;
+        color: black;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .img-container {
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+      .articles-text {
+        padding-left: 15px;
+        p {
+          line-height: 2;
+          font-size: 15px;
+          font-weight: 400;
+          padding-right: 90px;
+        }
+        h4 {
+          font-weight: 800;
+          font-size: 18px;
+        }
+      }
+    }
+    .read-more-btn {
+      width: 100%;
+      padding-top: 25px;
+      .news-btn {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: #e5383b;
+        border-radius: 6px;
+        padding: 8px 35px;
+        &:hover {
+          background-color: #ba181b;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.425);
+        }
+      }
+    }
+  }
+}
+
+//WORDS OF THE WEEK STYLING
+
+.word-section {
+  padding-bottom: 50px;
+  margin-top: 100px;
+  .word-title {
+    text-align: center;
+    padding-bottom: 50px;
+    h2 {
+      font-weight: 800;
+    }
+  }
+  .words-row {
+    .columnStyle {
+      .word-card {
+        color: white;
+        padding: 40px;
+        border-radius: 10px;
+        height: 220px;
+        .card-title {
+          font-size: 26px;
+          font-weight: 800;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+        .card-text {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 2;
+        }
+      }
+      .card-one {
+        background-color: #dd00ff;
+      }
+      .card-two {
+        background-color: #00ff6f;
+      }
+      .card-three {
+        background-color: #ff6600;
+      }
+    }
+  }
+}

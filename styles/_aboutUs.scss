@@ -1,0 +1,129 @@
+.aboutUs {
+  padding: 55px;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  p {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.mission-row {
+  display: flex;
+  justify-content: center;
+  .missionImg {
+    width: 100%;
+    background-image: url("/imgs/mission.jpg");
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    padding-right: 50px;
+  }
+  .missionInfo {
+    width: 100%;
+    background-color: #e5383b;
+    color: white;
+    padding-top: 50px;
+    padding-left: 40px;
+    h3 {
+      font-size: 35px;
+      padding-left: 50px;
+      padding-top: 50px;
+      font-weight: 900;
+      padding-bottom: 10px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 2;
+      padding-right: 85px;
+      padding-left: 50px;
+      text-align: justify;
+      .text-highlight {
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.vision-row {
+  display: flex;
+  justify-content: center;
+  .visionInfo {
+    width: 100%;
+    background-color: #e5383b;
+    color: white;
+    padding-top: 50px;
+    padding-left: 10px;
+    h3 {
+      font-size: 35px;
+      padding-top: 50px;
+      padding-left: 50px;
+      font-weight: 900;
+      padding-bottom: 10px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 2.5;
+      padding-right: 150px;
+      padding-left: 50px;
+      padding-top: 20px;
+      text-align: justify;
+    }
+  }
+  .visionImg {
+    width: 100%;
+    background-image: url("/imgs/vision\ image.png");
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+  }
+}
+
+.container {
+  .pageTitle {
+    h2 {
+      font-size: 36px;
+    }
+  }
+  .team-row {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    .column {
+      .team-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .team-img {
+          width: 90%;
+          img {
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+        .team-details {
+          padding-top: 30px;
+          h4 {
+            font-weight: 800;
+            font-size: 20px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.centerFlex {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.formBox {
+  padding-left: 95px;
+  width: 100%;
+  h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  form {
+    label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #ba181b;
+      margin-bottom: 20px;
+    }
+    input {
+      font-size: 14px;
+      width: 80%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      outline: none;
+      border: 1px solid;
+      border-radius: 2px;
+    }
+    textarea {
+      width: 80%;
+      height: 100px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      resize: none;
+      outline: none;
+      border: 1px solid;
+      border-radius: 2px;
+    }
+    input[type="submit"] {
+      border: 0px solid;
+      border-radius: 8px;
+      background-color: #ba181b;
+      color: white;
+      width: 300px;
+      transition-duration: 0.4s;
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #ba181b;
+        border: 2px solid #ba181b;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+  }
+}
+
+.contactInfoBox {
+  color: white;
+  height: 540px;
+  width: 100%;
+  background-color: #ba181b;
+  padding: 35px 35px 5px 55px;
+  h2 {
+    font-size: 35px;
+    margin-top: 0;
+    text-decoration: underline;
+    margin-bottom: 100px;
+  }
+  .infoRow {
+    display: flex;
+    padding-bottom: 60px;
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    img {
+      width: 50px;
+      padding-right: 35px;
+    }
+  }
+}
+
+.mapBox {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  .map {
+    display: flex;
+    justify-content: center;
+    padding: 0 80px 0 80px;
+    iframe {
+      width: 100%;
+    }
+  }
+}
